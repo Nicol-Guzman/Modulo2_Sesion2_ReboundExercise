@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO - Comisión de Ilustración</title>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO DE CONTACTO - Comisión de Ilustración</h1>
+        <hr>
+    </header>
+    <br>
+    <main>
+        <div>
+            <img style="width: 10%;" src="https://i.imgur.com/q5SRREK.png" alt="LOGO">
+        </div>
+        <br>
+        <form action="redireccion.html" method="post">
+            <div>
+                <label for="nombre">Nombre</label>
+                <br>
+                <input type="text" id="nombre" placeholder="Indique su nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="direccion">Dirección</label>
+                <br>
+                <input type="text" id="direccion" placeholder="Indique su dirección" required>
+            </div>
+            <br>
+            <div>
+                <label for="formato">Formato de la Comisión</label>
+                <br>
+                <input type="text" id="formato" list="tipocomision" required>
+                <datalist id="tipocomision">
+                    <option value="Sketch">Sketch</option>
+                    <option value="Lineart">Lineart</option>
+                    <option value="Flat Color">Flat Color</option>
+                    <option value="Full Color">Full Color</option>
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <label for="fecha">Fecha de Entrega</label>
+                <br>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <br>
+            <div>
+                <label for="hora">Hora de Entrega</label>
+                <br>
+                <input type="time" id="hora" name="hora" required>
+                
+            </div>
+            <br>
+            <div>
+                <label for="correo">Correo</label>
+                <br>
+                <input type="text" id="correo" placeholder="Indique su correo" required>
+            </div>
+            <br>
+            <button>Enviar Consulta</button>
+            <!-- <div>
+                <input type="submit" value="Enviar Consulta">
+            </div> -->
+        </form>     
+    </main>
+    <footer>
+        <p>*Para mas obtener información sobre nuestras comisiones, escríbenos a <b>comisiones.nekomakino@gmail.com</b></p>
+    </footer>
+</body>
+</html>
